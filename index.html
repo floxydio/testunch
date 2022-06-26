@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        .text_menu {
+            text-align: center;
+        }
+
+        .btn_yes {
+            margin: 0 auto;
+            background-color: palevioletred;
+            width: 80px;
+            font-weight: bold;
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .btn_no {
+            margin: 0 auto;
+            cursor: pointer;
+            background-color: palevioletred;
+            width: 80px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .row {
+            display: flex;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="love.jpg" width="100%"/>
+    </div>
+    <div class="text_menu">
+        <h2>Hy Kamuuu</h2>
+
+        <p>Pilihannya Hanya Ini</p>
+
+        <div class="row">
+            <div id="yes" class="btn_yes">Ya</div>
+            <div id="no" class="btn_no">Tidak</div>
+       
+        </div>
+        
+        </div>
+    
+
+
+        <script>
+            let nama = prompt("Siapa nama mu")
+            let callBtnYes = document.getElementById("yes")
+            let callBtnNo = document.getElementById("no")
+            let hideSelector = document.querySelector("btn_no")
+            
+
+            callBtnYes.addEventListener("click", function() {
+                alert(`Terimakasih ${nama}`)
+            })
+
+            callBtnNo.addEventListener("click", function() {
+                callBtnNo.style.visibility = 'hidden'
+            })
+
+        </script>
+
+</body>
+</html>
